@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/><!--<meta charset="iso-8859-1"> -->
+<title>ejercicio1</title>
+<style>
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 2px solid #777;
+
+}
+
+div.gallery img {
+  width: 100%;
+  height:200px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align:justify;
+  font-family: Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+  }
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+div p{
+  text-align:justify;
+  font-family:Verdana;
+
+}
+h1{
+  text-align: center;
+  font-family: Verdana;
+}
+</style>
+</head>
+
+<body>
+<h1>LENGUAJES DE PROGRAMACION</h1>
+<h2>haga un clic en la imagen para una vista mas grande</h2>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="imagenes/php.jpg">
+      <img src="imagenes/php.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">PHP (acrónimo recursivo de PHP: Hypertext Preprocessor) es un lenguaje de código abierto muy popular especialmente adecuado para el desarrollo web y que puede ser incrustado en HTML.</div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="imagenes/python.jpg">
+      <img src="imagenes/python.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Python es un lenguaje de programación simple y efectivo, con estructuras de datos de alto nivel eficientes y un simple pero efectivo sistema de programación orientado a objetos. </div>
+  </div>
+</div>
+
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="imagenes/java.jpg">
+      <img src="imagenes/java.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Oracle Java es la plataforma número uno de lenguaje de programación y desarrollo. Reduce costos, acorta los plazos de desarrollo, impulsa la innovación y mejora los servicios de las aplicaciones. </div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="imagenes/go.jpg">
+      <img src="imagenes/go.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Go es un lenguaje de programación relativamente nuevo, su lanzamiento oficial fue a finales de 2009 (aunque su primera versión estable fue en 2012), por lo que no lleva ni una década entre nosotros. </div>
+  </div>
+</div>
+
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  <p>Un lenguaje de programación es, como su nombre indica, un lenguaje como podría ser el inglés. La diferencia es que sirve únicamente para comunicarse con una máquina y controlar su comportamiento. Existen una gran cantidad de lenguajes de programación creados para diferentes objetivos. Todos ellos tienen un conjunto de reglas sintácticas y semánticas que sirven para definir el tipo de datos con los que se puede trabajar con ellos y, en consecuencia, el tipo de acciones que se pueden llevar a cabo con ellos.</p>
+</div>
+</body>
+</html>
